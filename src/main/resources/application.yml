@@ -1,0 +1,30 @@
+#
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/BYSJ?useUnicode=true&characterEncoding=utf-8
+#    username: root
+#    password: root
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#      show-sql: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /lxdhub
+
+fileConfig:
+  path: G:\\学习资料\\
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    servlet:
+      content-type: text/html
+    mode: HTML
+    cache: false
+    encoding: utf-8
